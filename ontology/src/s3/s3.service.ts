@@ -29,6 +29,7 @@ import {
         Body: body,
         ContentType: mime,
       });
+      console.log(cmd);
       await this.client.send(cmd);
       return { key };
     }
